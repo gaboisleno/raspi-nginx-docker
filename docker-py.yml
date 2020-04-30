@@ -1,0 +1,19 @@
+version: '3.1'
+services:
+
+  nginx-proxy:
+    image: budry/jwilder-nginx-proxy-arm
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  www:
+    image: nginx:1.17.10
+    restart: always
+    volumes:
+      - ./www:/usr/share/nginx/html:ro
+    environment:
+      - VIRTUAL_HOST=example.com, www.example.com
+      - NGINX_PORT=80
+

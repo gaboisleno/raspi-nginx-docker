@@ -1,4 +1,4 @@
-# raspi-nginx-docker
+# Nginx server with Docker on your raspberry pi 3 
 
 ## First dowload Alpine Linux for armv7 or armhf
 https://www.alpinelinux.org/downloads/

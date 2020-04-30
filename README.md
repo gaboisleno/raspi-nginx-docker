@@ -12,6 +12,6 @@ The other file have a nginx-proxy for any pc.
 Inside www folder put all your website files.
 
 ## How to
-´´
+```
 docker-compose <yourdockerfile.yml> up
-´´
+```
